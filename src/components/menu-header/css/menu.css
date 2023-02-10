@@ -1,0 +1,40 @@
+@import url("../../../App.css");
+
+.header-nav-menu-app{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+    transition: all .3s ease-in;
+    clip-path: circle(0.0% at 50% 50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-nav-menu-app.active{
+    clip-path: circle(70.7% at 50% 50%);
+}
+.header-nav-menu-app .list-items{
+    width: 100%;
+    text-align: center;
+}
+.list-items .item-list{
+    list-style: none;
+}
+.item-list .link-item{
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-text-light);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
