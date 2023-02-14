@@ -9,7 +9,7 @@
     --background-body: rgb(255, 255, 255);
     --background-header: rgb(255,255,255);
     --color-text-light: rgb(255,255,255);
-    --background-main: rgb(83, 20, 255);
+    --background-main: rgb(111, 32, 238);
     --background-dark: rgb(19, 18, 18);
     --color--text-light: rgb(36, 36, 36);
     --font-app:'Poppins', sans-serif;;
@@ -21,6 +21,7 @@ body{
 }
 .container{
   padding: 0em 1em;
+  max-width: 1200px;
   margin: 0 auto;
 }
 a{

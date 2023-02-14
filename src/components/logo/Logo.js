@@ -4,7 +4,7 @@ function Logo() {
     return (
         <div className="logo-app">
             <span className="logo">
-                sevastian
+                portfolio
             </span>
         </div>
     )

@@ -4,10 +4,9 @@
     width: 100%;
     min-height: 100vh;
     background-color: var(--background-dark);
-    transition: all .3s ease-in;
-    clip-path: circle(0.0% at 50% 50%);
+    transition: display .4s ease-in;
     text-align: center;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: var(--color-text-light);
@@ -16,7 +15,8 @@
     left: 0;
 }
 .header-nav-menu-app.active{
-    clip-path: circle(70.7% at 50% 50%);
+    display: flex;
+    transition: display .4s ease-in;
 }
 .header-nav-menu-app .list-items{
     width: 100%;
@@ -27,14 +27,60 @@
 }
 .item-list .link-item{
     width: 100%;
-    line-height: 50px;
+    line-height: 52px;
     text-align: center;
     color: var(--color-text-light);
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: 0.790em;
     font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.item-list .link-item:hover{
+    color: var(--background-main);
+    transition: color .2s ease;
+}
+
+/* responsive menu desktop */
+
+@media  (min-width:1200px){
+    .btn-menu{
+        display: none;
+    }
+    .header-nav-menu-app{
+        width: auto;
+        min-height: 100%;
+        background-color: transparent;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: none;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .header-nav-menu-app .list-items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1.4em;
+    }
+    .item-list .link-item{
+        width: 100%;
+        line-height: 52px;
+        text-align: center;
+        color: #343434;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 0.848em;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

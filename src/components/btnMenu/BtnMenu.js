@@ -7,11 +7,16 @@ function BtnMenu() {
         let lineCenter = document.querySelector(".line-2");
         let lineBtn = document.querySelector(".line-3");
         let headerMenu = document.querySelector(".header-nav-menu-app");
+        let linksMenu = document.querySelectorAll(".link-item");
 
         lineTop.classList.toggle("active");
         lineCenter.classList.toggle("active");
         lineBtn.classList.toggle("active");
         headerMenu.classList.toggle("active");
+
+        linksMenu.forEach((linkMenu)=>{
+            linkMenu.addEventListener("click",showMenu);
+        });
     }
     return (
         <div className="btn-menu" onClick={showMenu}>

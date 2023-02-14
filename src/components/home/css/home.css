@@ -1,1 +1,20 @@
 @import url("../../../App.css");
+.section-content-home-app .grid-content-home-app{
+    width: 100%;
+    min-height: 100vw;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    grid-gap: 1em;
+}
+.grid-content-home-app .title-home-app .title{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.grid-content-home-app .grid-content-image-app .image{
+    width: 100%;
+    max-width:250px;
+}
