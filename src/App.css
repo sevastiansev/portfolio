@@ -19,6 +19,12 @@ body{
     font-family: var(--font-app);
     color: var(--color--text-light);
 }
+body{
+  scroll-behavior: smooth;
+}
+section[id]{
+  scroll-margin-top: 65px;
+}
 .container{
   padding: 0em 1em;
   max-width: 1200px;
@@ -35,4 +41,8 @@ input,button{
   border: none;
   outline: none;
   font-family: var(--font-app);
+}
+.title-section-content .title{
+  font-size: 1.4em;
+  font-weight: 500;
 }

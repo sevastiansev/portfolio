@@ -13,10 +13,26 @@ function BtnMenu() {
         lineCenter.classList.toggle("active");
         lineBtn.classList.toggle("active");
         headerMenu.classList.toggle("active");
-
         linksMenu.forEach((linkMenu)=>{
             linkMenu.addEventListener("click",showMenu);
         });
+
+        let cuadros = document.querySelectorAll('.link-item');
+
+        for (let [i, cv] of cuadros.entries()) {
+            
+            cv.addEventListener('click', function focus() {
+                cuadros.forEach((item)=>{
+                    item.classList.remove("active")
+                })
+                cv.classList.toggle("active")
+                if(i+1){
+                    cv.classList.add("active");
+                }else{
+                    cv.classList.remove("active");
+                }
+            });
+        }
     }
     return (
         <div className="btn-menu" onClick={showMenu}>

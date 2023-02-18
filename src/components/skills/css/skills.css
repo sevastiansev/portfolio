@@ -1,1 +1,8 @@
 @import url("../../../App.css");
+.section-skills-content{
+    padding: 1.2em 0;
+}
+.section-skills-content .title-section-content{
+    margin: 1em 0;
+    text-align: center;
+}

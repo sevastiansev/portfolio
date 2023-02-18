@@ -1,20 +1,122 @@
 @import url("../../../App.css");
-.section-content-home-app .grid-content-home-app{
-    width: 100%;
-    min-height: 100vw;
-    padding-top: 3em;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    grid-gap: 1em;
+
+.section-content-home-app{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-.grid-content-home-app .title-home-app .title{
-    font-size: 1.5em;
-    font-weight: 700;
-    text-transform: uppercase;
+.grid-content-home{
+    width: 100%;
+    display: block;
+}
+.grid-content-1 .grid-content-image .image{
+    min-width: 100%;
+    overflow: hidden;
+    max-width: 400px;
+}
+.grid-content-2 .grid-content-text{
     text-align: center;
 }
-.grid-content-home-app .grid-content-image-app .image{
-    width: 100%;
-    max-width:250px;
+.grid-content-2 .grid-content-text .title-home{
+    padding-bottom: 0.5em;
+}
+.title-home .title{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.title .name{
+    color: var(--background-main);
+    font-weight: 700;
+    text-transform: lowercase;
+}
+.grid-content-2 .subtitle-home .subtitle{
+    font-size: .888em;
+    font-weight: 400;
+    color: #383838;
+}
+.content-btn{
+    padding-top: 1.3em;
+}
+.content-btn .btn-ct{
+    padding: 1em 3em;
+    background: var(--background-main);
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+}
+@media  (min-width:800px){
+    .grid-content-home{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .grid-content-1 .grid-content-image{
+        display: block;
+        position: relative;
+        margin: 0 -10%;
+        width: 115%;
+    }
+    .grid-content-2 .grid-content-text{
+        text-align: left;
+    }
+    .title-home .title{
+        font-size: 1.8em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .title .name{
+        color: var(--background-main);
+        font-weight: 700;
+        font-size: 1.2em;
+        text-transform: lowercase;
+    }
+    .grid-content-2 .subtitle-home .subtitle{
+        font-size: .898em;
+        font-weight: 400;
+        color: #383838;
+    }
+}
+@media  (min-width:1200px){
+    .grid-content-home{
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .grid-content-2 .grid-content-text .title-home{
+        padding-bottom: 0.3em;
+    }
+    .content-btn{
+        padding-top: 1.6em;
+    }
+    .grid-content-1 .grid-content-image{
+        display: block;
+        position: relative;
+        margin: 0 -10%;
+        width: 115%;
+    }
+    .grid-content-2 .grid-content-text{
+        text-align: left;
+    }
+    .title-home .title{
+        font-size:2em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .title .name{
+        color: var(--background-main);
+        font-weight: 700;
+        font-size: 1.3em;
+        text-transform: lowercase;
+    }
+    .grid-content-2 .subtitle-home .subtitle{
+        font-size: 1em;
+        font-weight: 400;
+        color: #383838;
+    }
 }
