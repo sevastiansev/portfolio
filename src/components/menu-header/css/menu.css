@@ -29,6 +29,7 @@
     width: 100%;
     line-height: 52px;
     text-align: center;
+    
     color: var(--color-text-light);
     text-transform: capitalize;
     letter-spacing: 2px;
