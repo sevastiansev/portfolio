@@ -9,7 +9,6 @@
     display: none;
     justify-content: center;
     align-items: center;
-    color: var(--color-text-light);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,12 +28,11 @@
     width: 100%;
     line-height: 52px;
     text-align: center;
-    
-    color: var(--color-text-light);
-    text-transform: capitalize;
+    color: var(--color-text-link-menu);
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.890em;
-    font-weight: 400;
+    font-size: 0.950em;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,16 +69,14 @@
         display: flex;
         align-items: center;
         text-align: center;
-        gap: 1.4em;
+        gap: 1.7em;
     }
     .item-list .link-item{
         width: 100%;
         line-height: 52px;
         text-align: center;
-        color: #343434;
+        color:var(--color-text-link-menu);
         text-transform: capitalize;
-        letter-spacing: 2px;
-        font-size: 0.848em;
         font-weight: 400;
         display: flex;
         align-items: center;
@@ -111,16 +107,14 @@
         display: flex;
         align-items: center;
         text-align: center;
-        gap: 1.4em;
+        gap: 1.7em;
     }
     .item-list .link-item{
         width: 100%;
         line-height: 52px;
         text-align: center;
-        color: #343434;
+        color: var(--color-text-link-menu);
         text-transform: capitalize;
-        letter-spacing: 2px;
-        font-size: 0.848em;
         font-weight: 400;
         display: flex;
         align-items: center;

@@ -1,11 +1,9 @@
 import React from 'react'
-import "./css/home.css"
 
-
-function Home() {
+function Proyects() {
     return (
         <></>
     )
 }
 
-export default Home;
+export default Proyects;
