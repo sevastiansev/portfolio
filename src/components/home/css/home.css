@@ -17,7 +17,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background:  rgba(20, 20, 20, 0.6);
+    background:  rgba(20, 20, 20, 0.5);
 }
 .content-home-page{
     position: relative;
@@ -25,7 +25,7 @@
     z-index: 2;
 }
 .text-content-home{
-    padding-top: 20%;
+    padding: 50% 0;
     display: block;
     line-height: 2.4em;
     text-align: center;
@@ -42,7 +42,7 @@
 .text-content-home .subtitle-home .subtitle{
     font-size: 1em;
     font-weight: 400;
-    color: #feff;
+    color: rgb(247, 247, 247);
 }
 .text-content-home .btn-ct{
     padding-top: 0.5em;
@@ -55,4 +55,20 @@
     font-weight: 400;
     font-size: 13px;
     background: var(--background-main);
+}
+@media  (min-width:1000px){
+    .text-content-home{
+        padding: 20% 0;
+        display: block;
+        line-height: 2.4em;
+        text-align: center;
+    }
+}
+@media  (min-width:1200px){
+    .text-content-home{
+        padding: 20% 0;
+        display: block;
+        line-height: 2.4em;
+        text-align: center;
+    }
 }
