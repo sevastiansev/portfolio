@@ -2,9 +2,9 @@
 
 .section-home-content{
     width: 100%;
-    background-image: url("../img/mohammad-rahmani-gA396xahf-Q-unsplash.jpg");
+    background-image: url("../img/thisisengineering-raeng-3cx_tx4h9oI-unsplash.jpg");
     position: relative;
-    position:center center;
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
     z-index:1;
@@ -17,7 +17,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background:  rgba(20, 20, 20, 0.5);
+    background:  rgba(20, 20, 20, 0.6);
 }
 .content-home-page{
     position: relative;
