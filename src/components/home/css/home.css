@@ -1,122 +1,58 @@
 @import url("../../../App.css");
 
-.section-content-home-app{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-.grid-content-home{
+.section-home-content{
     width: 100%;
+    background-image: url("../img/mohammad-rahmani-gA396xahf-Q-unsplash.jpg");
+    position: relative;
+    position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:1;
+}
+.section-home-content::after{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:  rgba(20, 20, 20, 0.6);
+}
+.content-home-page{
+    position: relative;
     display: block;
+    z-index: 2;
 }
-.grid-content-1 .grid-content-image .image{
-    min-width: 100%;
-    overflow: hidden;
-    max-width: 400px;
-}
-.grid-content-2 .grid-content-text{
+.text-content-home{
+    padding-top: 20%;
+    display: block;
+    line-height: 2.4em;
     text-align: center;
 }
-.grid-content-2 .grid-content-text .title-home{
-    padding-bottom: 0.5em;
-}
-.title-home .title{
-    font-size: 1.5em;
-    font-weight: 600;
+.text-content-home .title-home .title{
+    font-size: 1.6em;
     text-transform: uppercase;
+    font-weight: 700;
 }
 .title .name{
     color: var(--background-main);
-    font-weight: 700;
-    text-transform: lowercase;
+    font-weight: 600;
 }
-.grid-content-2 .subtitle-home .subtitle{
-    font-size: .888em;
+.text-content-home .subtitle-home .subtitle{
+    font-size: 1em;
     font-weight: 400;
-    color: #383838;
+    color: #feff;
 }
-.content-btn{
-    padding-top: 1.3em;
+.text-content-home .btn-ct{
+    padding-top: 0.5em;
 }
-.content-btn .btn-ct{
-    padding: 1em 3em;
-    background: var(--background-main);
-    font-size: 12px;
+.text-content-home .btn-ct .btn{
+    display: inline-block;
+    padding: 2px 45px;
+    border-radius: 25px;
     color: #fff;
-    border-radius: 5px;
-}
-@media  (min-width:800px){
-    .grid-content-home{
-        width: 100%;
-        min-height: 80vh;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-    .grid-content-1 .grid-content-image{
-        display: block;
-        position: relative;
-        margin: 0 -10%;
-        width: 115%;
-    }
-    .grid-content-2 .grid-content-text{
-        text-align: left;
-    }
-    .title-home .title{
-        font-size: 1.8em;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    .title .name{
-        color: var(--background-main);
-        font-weight: 700;
-        font-size: 1.2em;
-        text-transform: lowercase;
-    }
-    .grid-content-2 .subtitle-home .subtitle{
-        font-size: .898em;
-        font-weight: 400;
-        color: #383838;
-    }
-}
-@media  (min-width:1200px){
-    .grid-content-home{
-        width: 100%;
-        min-height: 80vh;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        flex-direction: row-reverse;
-    }
-    .grid-content-2 .grid-content-text .title-home{
-        padding-bottom: 0.3em;
-    }
-    .content-btn{
-        padding-top: 1.6em;
-    }
-    .grid-content-1 .grid-content-image{
-        display: block;
-        position: relative;
-        margin: 0 -10%;
-        width: 115%;
-    }
-    .grid-content-2 .grid-content-text{
-        text-align: left;
-    }
-    .title-home .title{
-        font-size:2em;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    .title .name{
-        color: var(--background-main);
-        font-weight: 700;
-        font-size: 1.3em;
-        text-transform: lowercase;
-    }
-    .grid-content-2 .subtitle-home .subtitle{
-        font-size: 1em;
-        font-weight: 400;
-        color: #383838;
-    }
+    font-weight: 400;
+    font-size: 13px;
+    background: var(--background-main);
 }

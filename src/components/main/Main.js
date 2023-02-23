@@ -5,7 +5,7 @@ import Proyects from '../proyects/Proyects';
 
 function Main() {
     return (
-        <main className="content-app-main container">
+        <main className="content-app-main">
             <Home/>
             <Proyects/>
         </main>

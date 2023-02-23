@@ -22,7 +22,7 @@ body{
     color: var(--color-text-body);
 }
 section{
-  margin: 1.5em auto;
+  min-height: 100vh;
 }
 section[id]{
   scroll-margin-top: 65px;
