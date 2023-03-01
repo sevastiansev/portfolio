@@ -1,31 +1,29 @@
 import React from 'react'
 import "./css/card.css";
-import data from "./data/data.json";
+import date from "./data/data.json";
 
 function CardItem() {
-    return (
-            data.map((item)=>{
-                return(
-                <div className="card-item-proyect" key={item.id}>
-                    <div className="card-content-item">
-                        <div className="card-content-top">
-                            <div className="card-content-img">
-                                <img src={item.img} alt={item.alt} />
-                            </div>
+    return(
+        date.map((data)=>(
+            <article className="card-component-proyect" key={data.id}>
+                <div className="card-content-component">
+                    <div className="card-image-component">
+                        <img src={data.img} alt={data.alt} className="image"/>
+                    </div>
+                    <div className="card-body-component">
+                        <div className="title-card-component">
+                            <span className="title">{data.title}</span>
                         </div>
-                        <div className="card-content-body">
-                            <div className="content-card-header-body">
-                                <div className="content-card-info">
-                                    <div className="card-title-content">
-                                        <span className="title">{item.title}</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="card-component-description">
+                            <p className="description">{data.description}</p>
+                        </div>
+                        <div className="btn-repository">
+                            <a href={data.repository} className="btn">repositorio</a>
                         </div>
                     </div>
                 </div>
-                )
-            })
+            </article>
+        ))
     )
 }
 export default CardItem;

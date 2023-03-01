@@ -1,10 +1,9 @@
 [
     {
         "id":0,
-        "img":"https://res.cloudinary.com/dxqtkj1ay/image/upload/v1677019576/portfolio/darkmode-menu.png",
-        "alt":"menu darkmode",
-        "title":"menu dark mode",
-        "repository":"https://github.com/sevastiansev/menu-dark-mode.git",
-        "website":"https://sevastiansev.github.io/menu-dark-mode/"
+        "img":"https://res.cloudinary.com/dxqtkj1ay/image/upload/v1677636941/portfolio/desktop-preview_oi7too.jpg",
+        "title":"news home page",
+        "description":"pagina web de noticias adaptable a dispositivos moviles",
+        "repository":"https://github.com/sevastiansev/news-home-page.git"
     }
 ]

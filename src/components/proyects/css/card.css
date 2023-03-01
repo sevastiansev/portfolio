@@ -1,0 +1,43 @@
+@import url("../../../App.css");
+
+.card-component-proyect{
+    width: 100%;
+    max-height: 450px;
+    background-color: rgb(39, 38, 38);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0em 0em 1.7em 0em;
+}
+.card-component-proyect .card-content-component{
+    display: grid;
+    gap:0.6em;
+}
+.card-component-proyect .card-content-component .card-body-component{
+    display: grid;
+    padding: 0em 1em;
+    gap: 0.5em;
+}
+.card-content-component .card-image-component .image{
+    width: 100%;
+    max-height: 250px;
+}
+.card-content-component .card-body-component .title-card-component .title{
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.card-content-component .card-body-component .card-component-description .description{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.5em;
+    padding-bottom: 0.5em;
+}
+.card-content-component .card-body-component .btn-repository .btn{
+    padding: 8px 28px;
+    background: var(--background-main);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
