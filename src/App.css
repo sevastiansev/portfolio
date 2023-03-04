@@ -21,9 +21,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     color: var(--color-text-body);
 }
-section{
-  min-height: 100vh;
-}
+
 section[id]{
   scroll-margin-top:6em;
 }
