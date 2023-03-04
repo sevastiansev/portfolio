@@ -1,0 +1,106 @@
+@import url("../../../App.css");
+
+.box-form-app{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background:#28282a;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1.5em 0.5em 1.2em 0.5em;
+}
+.box-form-app form .box-grid-form-inputs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 1em;
+}
+.box-grid-form-inputs .box-form-input{
+    width: 100%;
+    padding-bottom: 1em;
+    display: block;
+}
+.box-form-input .input-box{
+    width: 100%;
+    height:auto;
+    padding: 1.5em 1em;
+    color: #fff;
+    font-family: var(--font-app);
+    background: #232324;
+    border-radius: 8px;
+}
+.box-form-input .input-box::placeholder{
+    color: #868585;
+    font-family: var(--font-app);
+    font-size: 1.1em;
+}
+.box-form-input .lb{
+    display: block;
+    font-family: var(--font-app);
+    font-size: 1em;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+.box-form-input .error-field{
+    padding-top: 1em;
+    font-size: 12px;
+    color: #ff3737;
+    font-weight: 400;
+    display: none;
+}
+.box-grid-form-block .box-input-msg .error-field{
+    padding:1em 0em 1.4em 0em;
+    font-size: 12px;
+    color: #ff3737;
+    font-weight: 400;
+    display: none;
+}
+.box-grid-form-block{
+    display: grid;
+    gap: 1.5em;
+}
+.box-grid-form-block .box-input-msg .lb-msg{
+    display: block;
+    padding-bottom: 1em;
+}
+.box-grid-form-block .box-input-msg {
+    padding-bottom: 1em;
+}
+.box-grid-form-block .box-input-msg .input-box{
+    width: 100%;
+    height: 150px;
+    padding: 1.5em;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: var(--font-app);
+    resize: none;
+    background: #232324;
+    border-radius: 8px;
+}
+
+.box-form-app form .form-btn-send .btn{
+    width: 100%;
+    height: 50px;
+    background: var(--background-main);
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+@media  (min-width:800px){
+    .box-form-app form .box-grid-form-inputs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1em;
+    }
+}
+@media  (min-width:1000px){
+    .box-form-app form .box-grid-form-inputs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1em;
+    }
+}
