@@ -1,0 +1,16 @@
+[
+    {
+        "id":0,
+        "img":"https://res.cloudinary.com/dxqtkj1ay/image/upload/v1677636941/portfolio/desktop-preview_oi7too.jpg",
+        "title":"news home page",
+        "description":"pagina web de noticias adaptable a dispositivos moviles",
+        "repository":"https://github.com/sevastiansev/news-home-page.git"
+    },
+    {
+        "id":1,
+        "img":"https://res.cloudinary.com/dxqtkj1ay/image/upload/v1677716369/portfolio/sevastiansev.github.io_social-media-card-component__ngi4t6.png",
+        "title":"social media card ",
+        "description":"ventana modal de redes sociales para compartir responsive",
+        "repository":"https://github.com/sevastiansev/social-media-card-component.git"
+    }
+]

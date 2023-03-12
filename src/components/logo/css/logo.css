@@ -1,0 +1,20 @@
+@import url("../../../App.css");
+
+.logo-app .logo{
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--background-white);
+    position: relative;
+    font-weight: 700;
+}
+.logo-app .logo::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background: var(--background-main);
+    border-radius: 7px;
+}

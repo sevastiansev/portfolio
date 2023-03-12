@@ -1,0 +1,123 @@
+@import url("../../../App.css");
+
+.header-nav-menu-app{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-dark);
+    transition: display .4s ease-in;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-nav-menu-app.active{
+    display: flex;
+    transition: display .4s ease-in;
+}
+.header-nav-menu-app .list-items{
+    width: 100%;
+    text-align: center;
+}
+.list-items .item-list{
+    list-style: none;
+}
+.item-list .link-item{
+    width: 100%;
+    line-height: 52px;
+    text-align: center;
+    color: var(--color-text-link-menu);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.950em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-list .link-item:hover{
+    color: var(--background-main);
+    transition: color .2s ease;
+}
+.item-list .link-item.active{
+    color: var(--background-main);
+}
+/* responsive menu desktop */
+
+@media  (min-width:1000px){
+    .btn-menu{
+        display: none;
+    }
+    .header-nav-menu-app{
+        width: auto;
+        min-height: 100%;
+        background-color: transparent;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: none;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .header-nav-menu-app .list-items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1.7em;
+    }
+    .item-list .link-item{
+        width: 100%;
+        line-height: 52px;
+        text-align: center;
+        color:var(--color-text-link-menu);
+        text-transform: capitalize;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media  (min-width:1200px){
+    .btn-menu{
+        display: none;
+    }
+    .header-nav-menu-app{
+        width: auto;
+        min-height: 100%;
+        background-color: transparent;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: none;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .header-nav-menu-app .list-items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1.7em;
+    }
+    .item-list .link-item{
+        width: 100%;
+        line-height: 52px;
+        text-align: center;
+        color: var(--color-text-link-menu);
+        text-transform: capitalize;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
