@@ -47,10 +47,6 @@ const FormApp = ()=> {
                     }
                     return errores
                 }}
-                onSubmit={(valores,{resetForm})=>{
-                    console.log(valores)
-                        resetForm();
-                }}
             >
                 {({errors})=>( 
                     <div className="box-form-app">
