@@ -54,7 +54,7 @@ const FormApp = ()=> {
             >
                 {({errors})=>( 
                     <div className="box-form-app">
-                        <Form className="form-app" autoComplete='off'>
+                        <Form className="form-app" autoComplete='off' onSubmit={handleSubmit}>
                             <div className="box-grid-form-inputs">
                                 <div className="box-form-input">
                                     <label htmlFor="name" className="lb">Nombre</label>
